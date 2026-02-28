@@ -1,0 +1,130 @@
+/* SELECTOR PADRE */
+:root {
+    --colorPrimario: #EC111A;
+    --colorBordes: #DFE0E0;
+    --colorBoton: #FF0033;
+    --colorTextoGris: #53575A;
+    --colorTextoOscuro: #282D31;
+    --colorFondo: #fff;
+}
+
+/* SELECTOR UNIVERSAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+article.container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+/* FORMULARIO */
+.form {
+    background-color: var(--colorFondo);
+    padding: 2em 1.4em;
+    border-radius: .5em;
+    box-shadow: 1px 1px 10px rgba(40, 45, 49, 0.2);
+    width: 100%;
+    max-width: 350px;
+}
+
+/* TÍTULO Y SUBTEXTO */
+.tituloFormulario {
+    font-size: .95em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--colorPrimario);
+    margin-bottom: .3em;
+}
+
+.textoFormulario {
+    font-size: .85em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--colorTextoGris);
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+/* INPUTS Y SELECTS */
+.input, .lista {
+    width: 100%;
+    border-radius: .3em;
+    border: 1px solid var(--colorBordes);
+    padding: .55em .7em;
+    font-size: .85em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: .7em;
+    color: var(--colorTextoGris);
+    background-color: var(--colorFondo);
+    appearance: auto;
+    outline: none;
+}
+
+.input::placeholder {
+    font-weight: 600;
+    color: var(--colorTextoGris);
+}
+
+.lista {
+    font-weight: 600;
+}
+
+.input:focus, .lista:focus {
+    border-color: var(--colorPrimario);
+}
+
+/* RADIOS */
+.preguntaContacto {
+    font-size: .82em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--colorTextoOscuro);
+    margin-bottom: .4em;
+}
+
+.opcionesContacto {
+    display: flex;
+    gap: 8em;
+    margin-bottom: .8em;
+}
+
+.opcionRadio {
+    font-size: .82em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--colorTextoOscuro);
+    cursor: pointer;
+}
+
+/* CHECKBOX */
+.checkTerminos {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    white-space: nowrap;
+    font-size: .65em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--colorTextoGris);
+    margin-bottom: 1.4em;
+}
+
+.checkTerminos a {
+    color: var(--colorPrimario);
+    text-decoration: underline;
+}
+
+/* BOTÓN ENVIAR */
+.botonContacto {
+    width: 100%;
+    border-radius: .3em;
+    border: none;
+    background-color: var(--colorBoton);
+    color: var(--colorFondo);
+    padding: .65em;
+    font-family: 'Poppins', sans-serif;
+    font-size: .95em;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(255, 0, 51, 0.6), 0 0 4px rgba(255, 0, 51, 0.3);
+}

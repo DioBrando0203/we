@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- FRAMEWORK BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- LIBRERÍA DE FUENTES -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&
+        family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1
+        ,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- LIBRERÍA DE ICONOS FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+    <!-- FAVICON: ICONO PARA LA PESTAÑA DEL NAVEGADOR -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+
+    <!-- HOJA DE ESTILOS CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <body>
+    <article class="container">
+        <form action="#" method="post" class="form">
+
+            <!-- TÍTULO -->
+            <h2 class="tituloFormulario">Regístrate aquí para más información</h2>
+            <p class="textoFormulario">Te contactaremos a la brevedad.</p>
+
+            <!-- SELECT 1 -->
+            <select id="producto" class="input lista" required>
+                <option value="" selected disabled hidden>¿Qué producto te interesa?</option>
+                <option value="carreras">Carreras</option>
+                <option value="diplomado">Diplomado</option>
+                <option value="curso">Cursos</option>
+            </select>
+
+            <!-- SELECT 2 -->
+            <select id="carrera" class="input lista" required>
+                <option value="" selected disabled hidden>¿Qué carrera te gustaría estudiar?</option>
+                <option value="sistemas">Ingenieria de Sistemas</option>
+                <option value="civil">Ingenieria Civil</option>
+                <option value="datos">Ciencia de Datos</option>
+                <option value="mecanica">Ingenieria Mecanica</option>
+                <option value="agroind">Ingenieria Agroindustrial</option>
+                <option value="agronoma">Ingenieria Agronoma</option>
+                <option value="electronica">Ingenieria Electronica</option>
+                <option value="mecatronica">Ingenieria Mecatronica</option>
+            </select>
+
+            <!-- SELECT 3 -->
+            <select id="campus" class="input lista" required>
+                <option value="" selected disabled hidden>Elige el campus</option>
+                <option value="miraflores">Lima Miraflores</option>
+                <option value="centro">Lima Centro</option>
+                <option value="comas">Lima Comas</option>
+                <option value="surco">Lima Surco</option>
+                <option value="trujillo">Trujillo</option>
+                <option value="chimbote">Chimbote</option>
+            </select>
+
+            <!-- INPUTS -->
+            <input id="nombre" type="text" class="input" placeholder="Apellidos y Nombres" required>
+
+            <input id="correo" type="email" class="input" placeholder="Correo electrónico" required>
+
+            <input id="celular" type="tel" class="input" placeholder="Celular" required>
+
+
+            <!-- RADIOS -->
+            <p class="preguntaContacto">¿Cómo nos comunicamos contigo?</p>
+            <section class="opcionesContacto">
+                <label class="opcionRadio">
+                    <input type="radio" name="contacto" value="whatsapp" required>
+                    WhatsApp
+                </label>
+
+                <label class="opcionRadio">
+                    <input type="radio" name="contacto" value="llamada" required>
+                    Llamada
+                </label>
+            </section>
+
+            <!-- CHECKBOX -->
+            <label class="checkTerminos">
+                <input type="checkbox" required>
+                Acepto las <a href="#">políticas de privacidad</a> y los <a href="#">términos y condiciones</a>.
+            </label>
+
+            <!-- BOTÓN -->
+            <input type="submit" class="botonContacto" value="Enviar">
+
+        </form>
+    </article>
+    </body>
+</html>
