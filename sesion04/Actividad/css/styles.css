@@ -24,6 +24,15 @@
     height: 290px
 }
 
+
+/* inicio para navegacion header */
+header{
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .icono-whatsapp {
     font-size: 3em;
     position: fixed;
@@ -44,7 +53,7 @@
 }
 
 
-/* Para el header */
+/* Para el titulo */
 .espaciado {
     height: 2em; 
 }
