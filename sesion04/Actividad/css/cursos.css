@@ -1,13 +1,3 @@
-/* para lo demas titlos y ultimo boton */
-.boton-centrado {
-    margin-left: 0;
-}
-
-.titulo-negro {
-    color: var(--colorTitulos);
-    font-weight: 700;
-}
-
 /* Inicio de Cards */
 
 .cards-grid{
