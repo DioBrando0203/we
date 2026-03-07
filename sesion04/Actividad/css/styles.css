@@ -27,12 +27,77 @@
 
 /* inicio para navegacion header */
 header{
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 4px var(--colorSombras);
 }
 
+.menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+
+}
+
+.img-logo{
+    height: 3em;
+}
+.btn-menu{
+    display: none;
+}
+
+.enlaces{
+    text-align: right;
+}
+
+.enlaces a{
+    color: var(--colorPrimario);
+    text-decoration: none;
+    font-size: .9em;
+    padding: .7em;
+    font-weight: 500;
+
+}
+/* Inicio de Responsive web design */
+
+@media screen and (max-width: 1023px) {
+    .menu{
+        flex-direction: column;
+    }
+
+    .btn-menu{
+        display: block;
+    }
+
+    .icono-menu{
+        color: var(--colorPrimario);
+        font-size: 2em;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: .1em;
+    }
+
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Fin de responsive */
+
+/* fin de menu */
 .icono-whatsapp {
     font-size: 3em;
     position: fixed;
@@ -47,11 +112,9 @@ header{
 }
 
 
-
 .icono-whatsapp:hover{
     background-color: #d70000;
 }
-
 
 /* Para el titulo */
 .espaciado {
