@@ -191,3 +191,57 @@ header{
 .icono {
     color: white;
 }
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Poppins';
+    margin-top: 3em;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer-icono {
+    font-size: 2em;
+    color: #fff;
+}
+
+.footer-titulo {
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0;
+}
+
+.footer-texto {
+    font-size: .85em;
+    margin: 0;
+    color: #ccc;
+}
+
+.footer-bottom {
+    background-color: #1a1a1a; 
+    display: flex;
+    justify-content: space-between;
+    padding: .8em 2em;
+    font-size: .8em;
+    color: #aaa;
+}
+
+.footer-autor {
+    color: var(--colorPrimario);
+    font-weight: 600;
+}
